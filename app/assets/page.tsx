@@ -6,7 +6,7 @@ import { assetDomains } from "@/lib/content";
 
 export default function Assets() {
   return (
-    <main className="py-14 md:py-18">
+    <main className="py-14 md:py-20">
       <Container>
         <SectionHeader
           kicker="Asset Portfolio"
@@ -16,7 +16,12 @@ export default function Assets() {
 
         <div className="grid gap-6 md:grid-cols-3">
           {assetDomains.map((a) => (
-            <Card key={a.title} title={a.title} desc={a.desc} bullets={a.bullets} />
+            <Card
+              key={a.title}
+              title={a.title}
+              desc={a.desc}
+              bullets={a.bullets}
+            />
           ))}
         </div>
 

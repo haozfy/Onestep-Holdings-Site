@@ -6,7 +6,7 @@ import { collaborationModes } from "@/lib/content";
 
 export default function Strategy() {
   return (
-    <main className="py-14 md:py-18">
+    <main className="py-14 md:py-20">
       <Container>
         <SectionHeader
           kicker="Strategy"

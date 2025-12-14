@@ -1,30 +1,29 @@
-export default function Card({
-  title,
-  desc,
-  children,
-}: {
+// components/Card.tsx
+type CardProps = {
   title: string;
-  desc?: string;
-  children?: React.ReactNode;
-}) {
+  desc: string;
+  bullets?: string[];
+};
+
+export default function Card({ title, desc, bullets }: CardProps) {
   return (
-    <div className="group rounded-2xl bg-white/70 p-6 shadow-[0_1px_0_rgba(0,0,0,0.06)] ring-1 ring-black/5 backdrop-blur-sm transition hover:shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
-      <div className="flex items-start justify-between gap-6">
-        <div>
-          <div className="text-sm font-semibold tracking-tight text-neutral-950">
-            {title}
-          </div>
-          {desc ? (
-            <div className="mt-2 text-sm leading-6 text-neutral-600">
-              {desc}
-            </div>
-          ) : null}
-        </div>
+    <div className="rounded-2xl border border-neutral-200/70 bg-white p-6 shadow-[0_1px_0_rgba(0,0,0,0.04)]">
+      <h3 className="text-lg font-semibold tracking-tight text-neutral-900">
+        {title}
+      </h3>
 
-        <div className="h-10 w-10 rounded-xl bg-neutral-950/5 ring-1 ring-black/5" />
-      </div>
+      <p className="mt-2 text-sm leading-6 text-neutral-600">{desc}</p>
 
-      {children ? <div className="mt-5">{children}</div> : null}
+      {bullets?.length ? (
+        <ul className="mt-4 space-y-2 text-sm text-neutral-700">
+          {bullets.map((b) => (
+            <li key={b} className="flex gap-2">
+              <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-neutral-900/60" />
+              <span className="leading-6">{b}</span>
+            </li>
+          ))}
+        </ul>
+      ) : null}
     </div>
   );
 }
