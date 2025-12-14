@@ -1,23 +1,45 @@
-import inclination Container from "@/components/Container";
-import SectionHeader from "@/components/SectionHeader";
-import Card from "@/components/Card";
-import { operatingPlatforms } from "@/lib/content";
+<section
+  id="platforms"
+  className="border-t border-neutral-200/70 bg-white py-16 md:py-20"
+>
+  <Container>
+    <div>
+      <div className="text-xs tracking-[0.22em] text-neutral-500">
+        PLATFORMS
+      </div>
+      <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
+        Software & intelligence layer
+      </h2>
+      <p className="mt-3 max-w-2xl text-sm leading-6 text-neutral-600">
+        Operational software platforms that strengthen our asset portfolio
+        through compliance intelligence and quantitative signal validation.
+      </p>
+    </div>
 
-export default function Platforms() {
-  return (
-    <main className="py-14 md:py-18">
-      <Container>
-        <SectionHeader
-          kicker="Operating Platforms"
-          title="Platforms that operationalize assets and decision systems"
-          desc="Presented as internal capability carriers and selectively deployable platforms—not as the company’s identity."
-        />
-        <div className="grid gap-6 md:grid-cols-2">
-          {operatingPlatforms.map((p) => (
-            <Card key={p.title} title={p.title} desc={p.desc} bullets={p.bullets} />
-          ))}
-        </div>
-      </Container>
-    </main>
-  );
-}
+    <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+      <PlatformCard
+        name="SmartMSDS"
+        tagline="Compliance intelligence layer for SDS workflows — structured extraction, QA, and generation-ready pipelines."
+        points={[
+          "Structured parsing and normalization of SDS content",
+          "QA workflows designed for regulatory and audit-readiness",
+          "Built for integration into enterprise compliance systems",
+        ]}
+        href="https://smartmsds.com"
+        external
+      />
+
+      <PlatformCard
+        name="Onestep Alpha"
+        tagline="Quantitative signal intelligence platform focused on biological, chemical, and regulated-technology equities."
+        points={[
+          "Institutional-style signal validation and risk filtering",
+          "Pattern + scoring engine with reproducible rules",
+          "Designed for systematic research and decision support",
+        ]}
+        href="https://onestepalpha.com"
+        external
+      />
+    </div>
+  </Container>
+</section>
