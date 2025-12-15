@@ -64,7 +64,6 @@ function PlatformCard({
           <p className="mt-2 text-sm leading-6 text-neutral-600">{tagline}</p>
         </div>
 
-        {/* 外链：不会再出现“链接不到你网站” */}
         <a
           href={href}
           target="_blank"
@@ -97,23 +96,32 @@ export default function HomePage() {
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(1200px_circle_at_20%_10%,rgba(0,0,0,0.06),transparent_55%),radial-gradient(900px_circle_at_90%_40%,rgba(0,0,0,0.04),transparent_55%)]" />
         <Container>
           <div className="relative py-16 md:py-24">
-            <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/60 px-4 py-2 text-xs text-neutral-700">
+            <div className="inline-flex flex-wrap items-center gap-2 rounded-full border border-black/10 bg-white/60 px-4 py-2 text-xs text-neutral-700">
               <span className="font-medium">Onestep Holdings</span>
               <span className="text-neutral-400">•</span>
               <span className="text-neutral-600">
                 Licensing-grade signal systems & operating platforms
               </span>
+              <span className="text-neutral-400">•</span>
+              <span className="text-neutral-600">
+                U.S. Patent (Composition + Method)
+              </span>
             </div>
 
             <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight md:text-6xl">
-              We own validated signal systems{" "}
-              <span className="text-neutral-500">and the software to operationalize them.</span>
+              We own validated upstream signal assets{" "}
+              <span className="text-neutral-500">
+                built for licensing and instrument integration.
+              </span>
             </h1>
 
             <p className="mt-6 max-w-3xl text-base leading-7 text-neutral-600 md:text-lg">
               Onestep Holdings consolidates method-level chemical & biological signal IP with
-              production-grade platforms. We operate as an IP owner designed for licensing,
-              integration, and long-horizon strategic partnerships.
+              production-grade platforms. Our portfolio includes a{" "}
+              <span className="font-medium text-neutral-800">
+                patented DPD-alternative chromogenic system for chlorine detection
+              </span>{" "}
+              and additional signal assets designed for long-horizon strategic partnerships.
             </p>
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -141,16 +149,16 @@ export default function HomePage() {
 
             <div className="mt-14 grid grid-cols-1 gap-4 md:grid-cols-3">
               <StatCard
-                k="VALIDATION POSTURE"
-                v="Benchmark-ready artifacts, reproducibility packages, and stability profiling designed for diligence."
+                k="PATENT-LEVEL CONTROL"
+                v="U.S. composition and method claims defining an upstream alternative to legacy workflows (incl. DPD-based chlorine detection)."
               />
               <StatCard
-                k="LICENSING ORIENTATION"
-                v="Clear scopes, evidence packages, and integration pathways into instruments and regulated workflows."
+                k="DEPLOYMENT ADVANTAGE"
+                v="Higher sensitivity, ready-to-use handling (no on-site preparation), and non-toxic operation—designed for real-world deployment."
               />
               <StatCard
-                k="PORTFOLIO SHAPE"
-                v="Chemical + immunoassay + imaging signal systems, supported by operational software platforms."
+                k="DILIGENCE POSTURE"
+                v="Validation artifacts (e.g., sensitivity & stability profiling) and integration pathways—select packages shared under NDA."
               />
             </div>
           </div>
@@ -174,10 +182,12 @@ export default function HomePage() {
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
             <PillarCard
               title="Environmental & Chemical Signal Systems"
-              subtitle="Environment-facing chemical analysis pathways designed for real-world deployment and regulatory workflows."
+              subtitle="Environment-facing chemical analysis pathways designed for regulated workflows and instrument integration."
               bullets={[
-                "Water quality & chlorine analysis as an anchor measurement domain",
-                "Alternative chromogenic pathways emphasizing stability and low background",
+                "Flagship: patented DPD-alternative chromogenic system for chlorine detection",
+                "U.S. Patent protection (composition + method) with method-level control",
+                "Higher sensitivity profile and reduced operational burden",
+                "Ready-to-use workflow (no fresh reagent preparation) and non-toxic handling",
                 "Designed for integration into manual workflows, analyzers, or instruments",
               ]}
             />
