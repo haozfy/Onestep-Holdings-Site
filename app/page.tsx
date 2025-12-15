@@ -64,6 +64,7 @@ function PlatformCard({
           <p className="mt-2 text-sm leading-6 text-neutral-600">{tagline}</p>
         </div>
 
+        {/* 外链：不会再出现“链接不到你网站” */}
         <a
           href={href}
           target="_blank"
@@ -100,21 +101,18 @@ export default function HomePage() {
               <span className="font-medium">Onestep Holdings</span>
               <span className="text-neutral-400">•</span>
               <span className="text-neutral-600">
-                U.S. patent-backed signal systems for licensing & integration
+                Licensing-grade signal systems & operating platforms
               </span>
             </div>
 
             <h1 className="mt-6 max-w-4xl text-4xl font-semibold tracking-tight md:text-6xl">
-              We own a{" "}
-              <span className="text-neutral-500">U.S. patent-backed chromogenic method</span>{" "}
-              designed to replace DPD in chlorine detection.
+              We own validated signal systems{" "}
+              <span className="text-neutral-500">and the software to operationalize them.</span>
             </h1>
 
             <p className="mt-6 max-w-3xl text-base leading-7 text-neutral-600 md:text-lg">
-              Our proprietary <span className="font-medium text-neutral-800">composition + method</span>{" "}
-              deliver higher sensitivity, eliminate on-site reagent preparation, and remove
-              toxic handling requirements — while remaining compatible with existing chlorine
-              analysis workflows. Onestep Holdings operates as an IP owner built for licensing,
+              Onestep Holdings consolidates method-level chemical & biological signal IP with
+              production-grade platforms. We operate as an IP owner designed for licensing,
               integration, and long-horizon strategic partnerships.
             </p>
 
@@ -127,39 +125,33 @@ export default function HomePage() {
               </Link>
 
               <Link
-                href="/#collaboration"
+                href="/#platforms"
                 className="inline-flex items-center justify-center rounded-full border border-black/10 bg-white px-6 py-3 text-sm font-medium text-neutral-950 transition hover:bg-neutral-50"
               >
-                Discuss licensing & integration
+                Explore Platforms
               </Link>
 
               <Link
-                href="/#platforms"
+                href="/#collaboration"
                 className="inline-flex items-center justify-center rounded-full px-2 py-3 text-sm font-medium text-neutral-700 transition hover:text-neutral-950"
               >
-                See supporting platforms →
+                Speak with BD →
               </Link>
             </div>
 
             <div className="mt-14 grid grid-cols-1 gap-4 md:grid-cols-3">
               <StatCard
-                k="U.S. PATENT COVERAGE"
-                v="Composition + method claims structured for licensing, integration, and long-term deployment."
-              />
-              <StatCard
-                k="DPD WORKFLOW UPGRADE"
-                v="Designed as a DPD-alternative: higher sensitivity, ready-to-use handling, and non-toxic operation."
-              />
-              <StatCard
                 k="VALIDATION POSTURE"
-                v="Data-supported profiling (sensitivity, stability, workflow fit). Full packages shared under NDA."
+                v="Benchmark-ready artifacts, reproducibility packages, and stability profiling designed for diligence."
               />
-            </div>
-
-            {/* Optional: subtle anchor line, keeps it “high-level” */}
-            <div className="mt-10 max-w-3xl text-sm leading-6 text-neutral-600">
-              We do not prioritize direct retail. We engage through licensing, integration into instruments/workflows,
-              and strategic collaboration with qualified partners.
+              <StatCard
+                k="LICENSING ORIENTATION"
+                v="Clear scopes, evidence packages, and integration pathways into instruments and regulated workflows."
+              />
+              <StatCard
+                k="PORTFOLIO SHAPE"
+                v="Chemical + immunoassay + imaging signal systems, supported by operational software platforms."
+              />
             </div>
           </div>
         </Container>
@@ -171,27 +163,24 @@ export default function HomePage() {
           <div>
             <div className="text-xs tracking-[0.22em] text-neutral-500">ASSET PORTFOLIO</div>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">
-              Patent-backed, method-level assets
+              Core asset domains
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-neutral-600">
-              We present assets as method-level systems designed for licensing, integration, and strategic
-              collaboration — not retail products.
+              We present asset domains as method-level systems designed for licensing,
+              integration, and strategic collaboration — not retail products.
             </p>
           </div>
 
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
             <PillarCard
-              title="DPD Replacement for Chlorine Detection"
-              subtitle="U.S. patent-backed chromogenic system positioned as an upstream upgrade path for DPD-based workflows."
+              title="Environmental & Chemical Signal Systems"
+              subtitle="Environment-facing chemical analysis pathways designed for real-world deployment and regulatory workflows."
               bullets={[
-                "Composition + method claims (licensing-friendly asset posture)",
-                "Higher sensitivity profile across relevant chlorine ranges",
-                "Ready-to-use workflow (no fresh reagent preparation)",
-                "Non-toxic handling designed for safer deployment and transport",
-                "Method-level compatibility with existing instruments and procedures",
+                "Water quality & chlorine analysis as an anchor measurement domain",
+                "Alternative chromogenic pathways emphasizing stability and low background",
+                "Designed for integration into manual workflows, analyzers, or instruments",
               ]}
             />
-
             <PillarCard
               title="Immunoassay & Chromogenic Signal Systems"
               subtitle="Chromogenic signal architectures enabling sensitive, stable, reproducible enzymatic readouts."
@@ -201,7 +190,6 @@ export default function HomePage() {
                 "Benchmark-ready validation (comparative curves & stability profiling)",
               ]}
             />
-
             <PillarCard
               title="Cellular & Imaging Signal Systems"
               subtitle="Reagents and methods translating cellular structure into interpretable optical signals."
@@ -224,7 +212,7 @@ export default function HomePage() {
               Operating platforms that reinforce the portfolio
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-neutral-600">
-              Production-grade software platforms that strengthen our diligence posture through
+              Production-grade software platforms that strengthen our asset posture through
               compliance intelligence and quantitative signal validation.
             </p>
           </div>
@@ -253,8 +241,8 @@ export default function HomePage() {
                 Licensing. Integration. Strategic collaboration.
               </h2>
               <p className="mt-3 max-w-xl text-sm leading-6 text-neutral-600">
-                We engage selectively with partners seeking licensing, integration into instruments/workflows,
-                or co-development around upstream signal assets.
+                We respond to qualified inquiries related to licensing, integration into
+                instruments/workflows, and strategic partnership structures.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
@@ -262,10 +250,7 @@ export default function HomePage() {
                   Licensing
                 </span>
                 <span className="rounded-full border border-black/10 bg-white px-3 py-1 text-xs text-neutral-700">
-                  Instrument integration
-                </span>
-                <span className="rounded-full border border-black/10 bg-white px-3 py-1 text-xs text-neutral-700">
-                  Co-development
+                  Joint commercialization
                 </span>
                 <span className="rounded-full border border-black/10 bg-white px-3 py-1 text-xs text-neutral-700">
                   Strategic investment
@@ -279,8 +264,8 @@ export default function HomePage() {
                 business@onestepholdings.com
               </div>
               <div className="mt-4 text-sm leading-6 text-neutral-600">
-                Include: (1) integration context (instrument/workflow), (2) geography, (3) intended collaboration structure.
-                Additional materials can be shared under NDA for qualified discussions.
+                Include: (1) integration context (instrument/workflow), (2) geography,
+                (3) intended collaboration structure.
               </div>
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
